@@ -9,6 +9,11 @@
 \usepackage{fontspec}
 \usepackage{pdfpages}
 
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
 % german names
 \usepackage{ngerman}
 
@@ -104,13 +109,13 @@
 
 \clearpage
 
-\include{intro}
+\input{intro}
 
-\include{analyse}
+\input{analyse}
 
-\include{entwurf}
+\input{entwurf}
 
-\include{test}
+\input{test}
 
 
 \end{document}
