@@ -9,6 +9,10 @@
 \usepackage{fontspec}
 \usepackage{pdfpages}
 
+%Needed to wrap text around images, used for personas
+\usepackage{wrapfig}
+
+%Used to avoid page breaks with each chapter
 \usepackage{etoolbox}
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
