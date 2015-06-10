@@ -29,27 +29,50 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 \subsection{Objekt-Hierarchie}
 \label{sec:objekthierarchie}
 
-(1 Seite)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor nulla, accumsan non imperdiet convallis, congue nec orci. Nulla id nunc arcu. Fusce a congue metus. Etiam ex nunc, egestas ut urna vitae, commodo ultrices neque. Suspendisse id quam ut nulla sagittis laoreet ut quis nulla. Proin mollis vitae tortor non dignissim. Proin sed nulla eu dolor mattis auctor. Vestibulum eleifend interdum ligula eget pharetra. Integer sollicitudin non arcu non aliquam. Cras placerat ante at pretium vulputate.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vel augue molestie magna auctor convallis. Nullam tincidunt pharetra orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum congue risus orci, ac accumsan ante pretium et. Vestibulum maximus massa vitae sodales convallis. Integer sed mollis metus, eu porta
+
+\begin{wrapfigure}{L}{0.4\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[page=1,width=0.99\textwidth]{./images/objekthierachie}
+  \end{center}
+  \vspace{-40pt}
+\end{wrapfigure}
 
 \clearpage
 \subsection{Objekt-Attribut-Aktionen-Tabellen}
 \label{sec:objektattribut}
 
-(1 Seite)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor nulla, accumsan non imperdiet convallis, congue nec orci. Nulla id nunc arcu. Fusce a congue metus. Etiam ex nunc, egestas ut urna vitae, commodo ultrices neque. Suspendisse id quam ut nulla sagittis laoreet ut quis nulla. Proin mollis vitae tortor non dignissim. Proin sed nulla eu dolor mattis auctor. Vestibulum eleifend interdum ligula eget pharetra. Integer sollicitudin non arcu non aliquam. Cras placerat ante at pretium vulputate.
+\begin{tabular}{l p{5cm} p{5cm}}
+Objekt & Attribute & Aktionen \\
+\hline
+Übersicht & Aktuelle Fragen, Beendete Fragen & Suchen, Navigieren\\
+Menü & Navigationselemente & Navigieren\\
+Hilfe & FAQ & Suchen\\
+Einstellungen & Sprache, Info, Aussehen & Sprache ändern, Stil ändern, Theme wählen\\
+Verfasste Argumente & Abgegebene Argumente & Umfrage aufrufen\\
+Detailansicht zur Frage & Überschrift, Beschreibung, Dozent, Pro-Argumente, Kontra-Argumente & Neues Argument erstellen\\
+Argument verfassen &Argument, Pro/Kontra & Absenden\\
+\end{tabular}
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vel augue molestie magna auctor convallis. Nullam tincidunt pharetra orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum congue risus orci, ac accumsan ante pretium et. Vestibulum maximus massa vitae sodales convallis. Integer sed mollis metus, eu porta
-
-\clearpage
 \subsection{Tabelle der Bedienelemente}
 \label{sec:bedienelemente}
 
-(1 Seite)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor nulla, accumsan non imperdiet convallis, congue nec orci. Nulla id nunc arcu. Fusce a congue metus. Etiam ex nunc, egestas ut urna vitae, commodo ultrices neque. Suspendisse id quam ut nulla sagittis laoreet ut quis nulla. Proin mollis vitae tortor non dignissim. Proin sed nulla eu dolor mattis auctor. Vestibulum eleifend interdum ligula eget pharetra. Integer sollicitudin non arcu non aliquam. Cras placerat ante at pretium vulputate.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vel augue molestie magna auctor convallis. Nullam tincidunt pharetra orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum congue risus orci, ac accumsan ante pretium et. Vestibulum maximus massa vitae sodales convallis. Integer sed mollis metus, eu porta
+\bgroup
+\def\arraystretch{1.5}
+\begin{tabular}{p{4.5cm} | p{1.8cm} p{2cm} p{2.5cm} p{2cm} p{1.8cm} p{2cm}}
+Aktion/Attribute & Dedizierter Button & Seitenmenü & Ausklappbares Menü & Toolbar & Android Buttons\\
+\hline
+Suche &  &  &  & x & x\\
+Argument erstellen & x &  &  &  & \\
+Argument abschicken & x &  &  & x & \\
+Argument verwerfen & x &  &  & x & x\\
+Fragen sortieren &  &  & x &  & \\
+Fragen nach Aktuellen filtern &  &  & x &  & \\
+Einstellungen bearbeiten & x & x &  &  & \\
+Hilfe abrufen &  & x &  &  & \\
+Fragendetails ausblenden (Zurück zur Übersicht) & x &  &  &  & x\\
+\end{tabular}
+\egroup
 
 \clearpage
