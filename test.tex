@@ -1,10 +1,26 @@
 \chapter{Test}
 \label{chap:test}
 
+\section{Aufgabenverteilung}
+
+Wir haben die folgende Verteilung beschlossen:\\
+
+\textbf{Testleiter:} Tobias Kerst
+
+Kümmert sich darum, den Test zu erklären und geht die einzelnen Aufgaben mit dem Probanden durch.
+
+\textbf{Unterstützung Testleiter/Interaktionsmanagement:} Maike Rees
+
+Ist für die einzelnen Screens zuständig, dass beim klicken auf klickbare Elemente die entsprechenden Fenster und Dialoge aufgehen.
+
+\textbf{Protokollant:} Patrick König
+
+Ist für die Dokumentation des Tests zuständig. Hierbei wird der Test an sich und die Nachbesprechung festgehalten.
+
 \section{Testvorbesprechungs-Anleitung}
 \label{sec:testvorbesprechung}
 
-Diese hier genannten Punkte sind die Anweisung für den Testleiter, wie er den Probanden auf den Test vorbereiten soll. Der Testleiter probiert diese Punkte in einer lockeren Atmosphäre zu erläutern.
+Die hier genannten Punkte sind die Anweisungen für den Testleiter, wie er den Probanden auf den Test vorbereiten soll. Der Testleiter probiert diese Punkte in einer lockeren Atmosphäre zu erläutern.
 
 \begin{itemize}
 \item Dem Probanden muss klargemacht werden, dass nicht er, sondern nur unsere App getestet wird. Dabei soll uns der Proband helfen.
@@ -45,6 +61,42 @@ Im Anschluss wird dem Probanden noch das folgende Datenschutzformular vorgelegt.
   \vspace{-20pt}
   \begin{center}
     \includegraphics[page=1,width=0.99\textwidth]{./images/datenschutz}
+  \end{center}
+  \vspace{-40pt}
+\end{wrapfigure}
+
+\clearpage
+
+\section{Testfragen}
+
+\begin{wrapfigure}{L}{0.4\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[page=1,width=0.99\textwidth]{./images/probetests}
+  \end{center}
+  \vspace{-40pt}
+\end{wrapfigure}
+
+\begin{wrapfigure}{L}{0.4\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[page=2,width=0.99\textwidth]{./images/probetests}
+  \end{center}
+  \vspace{-40pt}
+\end{wrapfigure}
+
+\begin{wrapfigure}{L}{0.4\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[page=3,width=0.99\textwidth]{./images/probetests}
+  \end{center}
+  \vspace{-40pt}
+\end{wrapfigure}
+
+\begin{wrapfigure}{L}{0.4\textwidth}
+  \vspace{-20pt}
+  \begin{center}
+    \includegraphics[page=4,width=0.99\textwidth]{./images/probetests}
   \end{center}
   \vspace{-40pt}
 \end{wrapfigure}
@@ -135,28 +187,36 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 \subsection{Im Test erkannte Probleme}
 \label{sec:foundproblemes}
 
-Durch den Test der Android App sind einge Schwächen unseres Prototypen aufgefallen. Besonders hervorzuheben ist hier die Struktur der App.
+Durchh den Test der Android-App sind einige Schwächen unseres Prototypen aufgefallen. Besonders hervorzuheben ist hier die Struktur der App.
 
-Beispielsweise ist bereits zu Beginn aufgefallen, dass dem Probanden nicht klar war, was auf dem Homescreen dargestellt wird und was nicht. Wir hatten uns dazu entschlossen, auch bereits abgelaufene Umfragen unter den aktuellen Umfragen aufzulisten, was offensichtlich zur Verwirrung geführt hat. Somit war es für den Probanden nicht klar, dass wir einen seperaten Screen für die von ihm abgegebenen Argumente haben, was ja quasi einem Archiv entspricht.
+Beispielsweise ist bereits zu Beginn aufgefallen, dass dem Probanden nicht klar war, was auf dem Homescreen dargestellt wird und was nicht. Wir hatten uns dazu entschlossen, auch bereits abgelaufene Umfragen unter den aktuellen Umfragen aufzulisten, was offensichtlich zur Verwirrung geführt hat. Somit war es für den Probanden nicht klar, dass wir einen separaten Screen für die von ihm abgegebenen Argumente haben, was quasi einem Archiv entspricht.
 
-Als nächstes stellten wir fest, dass der Proband Schwierigkeiten damit hatte die globalen Einstellungen von den Ansichtseinstellungen des Homescreens zu unterscheiden. Gemeint sind hier die Einstellungen zum Ausblenden von bereits abgelaufenen Umfragen und der Sortierung aller Umfragen. Der Button, der dieses Menü aufruft wurde erst sehr spät gefunden.
+Als nächstes stellten wir fest, dass der Proband Schwierigkeiten damit hatte die globalen Einstellungen von den Ansichtseinstellungen des Homescreens zu unterscheiden. Gemeint sind hier die Einstellungen zum Ausblenden von bereits abgelaufenen Umfragen und der Sortierung aller Umfragen. Der Button, der dieses Menü aufruft, wurde erst sehr spät gefunden.
 
+Es wurde angemerkt, dass die App in gewissen teilen sehr intuitiv, wie beim Verfassen der Argumente oder dem Aktualisieren der Umfragen, aber auch teilweise aufgrund der verbesserungswürdigen Struktur nicht absolut intuitiv war.
+Außerdem muss die Suche verbessert werden um auch abgegebene Argumente zu finden.
+
+Zuletzt viel auf, dass (vor allem auf dem Homescreen) nicht immer klar war, was anklickbar ist und was nicht. Dies wurde offenkundig, als der Proband auf einzelne Teile einer Umfragekachel klickte und eine gewisse Ausgabe erwartete. Dabei sind die Kacheln als Einheit zu sehen.
 
 \subsection{Abgeleitete Verbesserungsvorschläge}
 \label{sec:verbesserungsvorschlaege}
 
-Man kann aus den im Test festgestellten Problemen einige Verbesserungsvorschläge ableiten. Zum Einen sollte man definitiv die Struktur der App überdenken. Der Homescreen sollte die bereits abgelaufenen Umfragen nicht weiter anzeigen, sondern in einen gesonderten Screen auslagern, den man als Archiv bezeichnen kann. Hierbei ist dann noch wichtig, dass eine Differenzierung der bereits abgelaufenen Umfragen und der von dem User abgegebenen Argumente zu allen (auch abgelaufenen) Umfragen notwendig ist. Wie man diese Teile am besten trennt müsste durch weitere Tests herausgefunden werden. Dadurch, dass diese Funktionalität jedoch vermutlich nur selten genutzt wird und daher keine wichtge Funktion ist, sollte man diese Screens in das Slide-In Menü integrieren, da dieses Menü primär genutzt wird, wenn man erweiterte Funktionen benötigt.
+Man kann aus denen im Test festgestellten Problemen einige Verbesserungsvorschläge ableiten. Zum Einen sollte man definitiv die Struktur der App überdenken. Der Homescreen sollte die bereits abgelaufenen Umfragen nicht weiter anzeigen, sondern in einen gesonderten Screen auslagern, den man als Archiv bezeichnen kann. Hierbei ist dann noch wichtig, dass eine Differenzierung der bereits abgelaufenen Umfragen und der von dem Benutzer abgegebenen Argumente zu allen (auch abgelaufenen) Umfragen notwendig ist. Wie man diese Teile am besten trennt, müsste durch weitere Tests herausgefunden werden. Dadurch, dass diese Funktionalität jedoch vermutlich nur selten genutzt wird und daher keine wichtige Funktion ist, sollte man diese Screens in das Slide-In Menü integrieren, da dieses Menü primär genutzt wird, wenn man erweiterte Funktionen benötigt.
 
 Außerdem sollte man die Sortierung der Umfragen in die bereits existierenden Einstellungen auslagern, da die App somit noch simpler wird.
+
+Zuletzt muss man, wie oben angemerkt, die Suche verbessern und verfeinern und die anklickbaren Elemente grafisch verbessern.
 
 \subsection{Kritik und Bewertung des Tests}
 \label{sec:kritik}
 
 Beim Test unseres Prototypen sind uns einige Dinge aufgefallen, die primär konzeptioneller Natur waren. Es hat bereits damit angefangen, dass wir durch technische Probleme nicht alle Dokumente ausdrucken konnten und somit dann auch zu spät zu dem verabredeten Test gekommen sind. Daraus entstand dann eine entsprechend gestresste Situation, die man durch bessere Planung hätte umgehen können. 
-Nachdem wir dann alles für den Test gerichtet hatten viel relativ schnell auf, dass wir unsere App zu ausführlich testen wollten und dass wir uns nicht auf spezielle Fälle fokussierten. Wir wollten sowohl die Webapplikation, als auch die Android App testen und hatten dafür sehr viele Testfälle vorbereit, was auch dem Testleiter bewusst war. Daraus resultierte, dass die Testvorbesprechung viel zu kurz kam und eventuelle Fragen eventuell nicht geklärt wurden.
-Beim eigentlichen Test haben wir dann festgestellt, dass die eigentlichen Funktionen erst viel zu spät dran kamen, so hatten wir als erste Fälle gefragt, wie man Einstellungen ändert und das Archiv findet und daraus Informationen ableitet. Es wäre an dieser Stelle wesentlich sinnvoller gewesen, wenn man zuerst die Abfrage von Informationen zu den existierenden Umfragen gefordert hätte, da sich der Proband dann auch schneller an den strukturellen Aufbau der App hätte gewöhnen können und daraus resultierend die Aufgaben schneller hätte lösen können. Durch unsere Fragen verwirrten wir den Probanden jedoch massiv, was dem Test alles andere als förderlich war.
+Nachdem wir dann alles für den Test gerichtet hatten fiel relativ schnell auf, dass wir unsere App zu ausführlich testen wollten und dass wir uns nicht auf spezielle Fälle fokussierten. Wir wollten sowohl die Webapplikation, als auch die Android App testen und hatten dafür sehr viele Testfälle vorbereitet, was auch dem Testleiter bewusst war. Daraus resultierte, dass die Testvorbesprechung viel zu kurz kam und eventuelle Fragen eventuell nicht geklärt wurden.
+Beim eigentlichen Test haben wir dann festgestellt, dass die eigentlichen Funktionen erst viel zu spät dran kamen, so hatten wir als ersten Fall gefragt, wie man Einstellungen ändert und das Archiv findet und daraus Informationen ableitet. Es wäre an dieser Stelle wesentlich sinnvoller gewesen, wenn man zuerst die Abfrage von Informationen zu den existierenden Umfragen gefordert hätte, da sich der Proband dann auch schneller an den strukturellen Aufbau der App hätte gewöhnen können und somit die Aufgaben schneller hätte lösen können. Durch unsere Fragen verwirrten wir den Probanden jedoch massiv, was während dem Test alles andere als förderlich war.
 
-Wie bereits angesprochen, haben wir die Testdauer massivst unterschätzt, so kam es dazu, dass wir Testaufgaben überspringen mussten und der Prototyp für die Webapp überhaupt nicht getestet wurde. In Zukunft ist eine bessere Abschätzung des Verlaufs von essentieller Bedeutung.
+Wie bereits angesprochen, haben wir die Testdauer unterschätzt, so kam es dazu, dass wir Testaufgaben überspringen mussten und der Prototyp für die Webapp überhaupt nicht getestet wurde. In Zukunft ist eine bessere Abschätzung des Verlaufs von essenzieller Bedeutung.
+
+Es fiel zudem auf, dass der Testleiter während des Tests die Aktionen des Probanden in einigen Fällen durch seine Aussagen bewertete. Dies sollte, wie in der Anfangsbesprechung auch gefordert, vermieden werden.
 
 Auch wenn nicht alles absolut perfekt funktioniert hat, kann man festhalten, dass wir durch die gemachten Fehler viel gelernt haben, was man in Zukunft vermeiden kann.
 
